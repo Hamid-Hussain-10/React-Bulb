@@ -1,0 +1,80 @@
+.bulb-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+  }
+  
+  .bulb {
+    width: 250px;
+    height: 340px;
+    background-color: #e0ddc2;
+    border-radius: 52% 52% 40% 40%;
+    position: relative;
+    transition: box-shadow 0.5s, background-color 0.5s;
+  }
+  
+  .bulb.on {
+    box-shadow: 0 0 80px rgba(255, 255, 0, 1);
+    background-color: #fffacd;
+  }
+  
+  .bulb.off {
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+    background-color: #e2dfc4;
+  }
+  
+  .filament {
+    width: 40px;
+    height: 5px;
+    background-color: #ffeb3b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }
+  
+  .holder {
+    width: 60px;
+    height: 20px;
+    background-color: #000068;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .controls {
+    margin-top: 40px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .on-button {
+    background-color: #4caf50;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .off-button {
+    background-color: #f44336;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
